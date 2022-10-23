@@ -1,5 +1,3 @@
-# FAT-Pac
+# JavaScript Pacman
 
-Auto Move?
-
-Punkte in Raster setzen und Hindernisse Drüber
+Can you reach up to level 5?
