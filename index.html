@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pac Man</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <audio controls loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    </head>
+
+
+<body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCSfmERgCe8PbAwXayEH126nzM4xZZtc9k",
+        authDomain: "pacman-6f106.firebaseapp.com",
+        projectId: "pacman-6f106",
+        storageBucket: "pacman-6f106.appspot.com",
+        messagingSenderId: "932049277525",
+        appId: "1:932049277525:web:f7c706e83825cbc17a7adc"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+</script>
+
+<div >
+    <img id="logo" src="images/logo.png" alt="Logo">
+
+</div>
+
+<div id="game">
+    <div id="controllsBoard">Controlls: <br> WASD <br> + <br> Arrow Keys</div>
+
+
+    <div id="playground">
+
+
+        <div id="points"></div>
+        <div id="obstacles"></div>
+
+        <img id="player" src="images/player1.png">
+
+        <img id="blinky" src="images/blinky.png"></img>
+        <img id="pinky" src="images/pinky.png"></img>
+        <img id="inky" src="images/inky.png"></img>
+        <img id="clyde" src="images/clyde.png"></img>
+
+    </div>
+
+    <div id="teleporter"></div>
+
+    <div id="gameOver">Game Over</div>
+    <div id="restart">Restart</div>
+
+
+    <div id="pointsBoard">0 Points</div>
+</div>
+
+    <div id="toggleArrows">Open Arrow Keys</div>
+
+    <div id="upArrow" class="arrow">ᐃ</div>
+
+<div id="lowerControlls">
+    <div id="leftArrow" class="arrow">ᐊ</div>
+    <div id="downArrow" class="arrow">ᐁ</div>
+    <div id="rightArrow" class="arrow">ᐅ</div>
+</div>
+<div class="level">
+    <div>
+        <ul>
+            <li>
+                Level 1 (0 Punkte) = Map 1 + speed 1
+            </li>
+            <li>
+                Level 2 (50 Punkte) = Map 1 + speed 2
+            </li>
+            <li>
+                Level 3 (0 Punkte) = Map 2 + speed 1
+            </li>
+            <li>
+                Level 4 (50 Punkte) = Map 2 + speed 2
+            </li>
+            <li>
+                Level 5 (100 Punkte) = Map 2 + speed 3
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li>
+                Level 6 (0 Punkte) = Map 3 + speed 1
+            </li>
+            <li>
+                Level 7 (50 Punkte) = Map 3 + speed 2
+            </li>
+            <li>
+                Level 8 (100 Punkte) = Map 3 + speed 3
+            </li>
+            <li>
+                Level 9 (200 Punkte) = Map 3 + speed 4
+            </li>
+            <li>
+                Map 3 300 Punkte = Win
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script type="module" src="game.js" charset="utf-8"></script>
+</body>
+
+</html>

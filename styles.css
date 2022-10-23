@@ -1,0 +1,206 @@
+html, body {
+    overflow: hidden;
+    background-color: #070607;
+}
+
+#game {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+/* Pacman Style */
+#controllsBoard, #pointsBoard, .obstacle, #playground, #teleporter, #gameOver, #restart, .arrow, #toggleArrows, .level {
+    background-color: black;
+    color: white;
+    outline: 2px solid;
+    outline-color: #1826E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#player {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    z-index: 100;
+}
+
+#clyde, #inky, #pinky, #blinky {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+
+}
+
+
+#playground {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    z-index: 2;
+
+}
+
+#controllsBoard {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 100px;
+    padding: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px
+}
+
+#pointsBoard {
+    width: 200px;
+    height: 70px;
+    margin: 10px;
+    margin-top: 200px;
+
+    padding: 30px;
+    text-align: center;
+
+    font-size: 15px;
+
+}
+
+
+#obstacles {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#points {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10px;
+    padding: 0;
+
+}
+
+#gameOver {
+
+    margin-top: 200px;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    justify-content: center;
+    width: 400px;
+    height: 150px;
+    z-index: 300;
+    font-size: 25px;
+}
+
+#restart {
+    margin-top: 275px;
+    display: none;
+    position: absolute;
+    padding: 20px;
+
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    z-index: 300;
+}
+
+#restart:hover, #upArrow:hover, #leftArrow:hover, #downArrow:hover, #rightArrow:hover {
+    background-color: white;
+    color: black;
+}
+
+.points {
+    background-color: white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 90px;
+}
+
+
+
+.obstacle {
+    position: absolute;
+}
+
+#logo {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: block;
+    width: 400px;
+    height: 100%;
+}
+
+#teleporter {
+    position: absolute;
+    margin-top: 244px;
+    width: 530px;
+    height: 20px;
+    z-index: 1;
+}
+
+.arrow {
+    width: 17%;
+    height: 30%;
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+    margin: 3px;
+    padding: 10px;
+
+}
+
+#upArrow {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    display: none;
+}
+
+#lowerControlls {
+    justify-content: center;
+    display: none;
+}
+
+#toggleArrows {
+    font-size: 10px;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#toggleArrows:hover {
+    color: #1826E6;
+}
+
+.level {
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    width: 50%;
+    margin-top: 50px;
+    align-content: space-evenly;
+    display: flex;
+    margin: 3px;
+}
